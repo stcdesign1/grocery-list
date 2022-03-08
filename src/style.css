@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    --primary: #333d29;
+    --primary-dark: #141810;
+    --primary-light-1: #656d4a;
+    --primary-light-2: #a4ac86;
+    --primary-light-3: #DADEC0;
+    --secondary: #582f0e;
+    --secondary-dark: #231306;
+    --secondary-light-1: #936639;
+    --secondary-light-2: #a68a64;
+    --grey-1: #7293AC;
+    --bg-light-1: #F9FCED;
+    --alert-1: #81b29a;
+    --alert-2: #f2cc8f;
+    --alert-3: #e07a5f;
+}
+
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.6rem;
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('bg-image.jpg');
+    background-size: cover;
+}
+
+ul,
+li,
+nav {
+    list-style: none;
+}
+
+
+/*
+=============== 
+Content
+===============
+*/
+
+.container {
+    /* align-self: center; */
+    /* background-color: red; */
+    background-color: #fff;
+    /* padding: 4rem; */
+    border-radius: 1.2rem;
+    box-shadow: .5rem 2rem 6rem  rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+    font-size: 3.2rem;
+    color: #fff;
+}
+
+.grocery-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    background-color: var(--secondary-light-1);
+    padding: 3.2rem;
+    border-radius: 1.2rem 1.2rem 0 0;
+    position: relative;
+}
+
+.grocery-heading-line {
+    position: absolute;
+    border-top: .4rem dashed #fff;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.grocery-content-separator {
+    border-top: .3rem dashed var(--stroke);
+    margin: 2.4rem 0;
+}
+
+.grocery-heading h1 {
+    max-width: 2rem;
+    font-size: 3.6rem;
+}
+
+.grocery-heading img {
+    max-width: 8rem;
+}
+
+.grocery-content {
+    padding: 3.2rem;
+    padding-top: 0;
+}
+
+.grocery-form input {
+    padding: 1.2rem 1.6rem;
+    border: none;
+    color: var(--primary-dark);
+    background-color: var(--primary-light-3);
+    border-radius: .8rem;
+}
+
+.grocery-form button {
+    margin-left: 1rem;
+    cursor: pointer;
+    border: none;
+    padding: 1.2rem 1.4rem;
+    border-radius: .8rem;
+    background-color: var(--primary);
+    color: #fff;
+    font-weight: 600;
+}
+
+.grocery-form button:hover {
+    background-color: var(--primary-light-1);
+}
+
+.clear-button {
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 1.2rem 1.4rem;
+    border: none;
+    border-radius: .8rem;
+    font-weight: 600;
+    background-color: var(--primary-light-2);
+    color: var(--primary);
+}
+
+.clear-button:hover {
+    background-color: var(--primary-light-1);
+    color: #fff;
+}
+
+.grocery-item {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dddddd;
+    border-radius: .8rem;
+    padding: 1.2rem 1.6rem 1.2rem 2rem;
+    margin-top: 1.2rem;
+    position: relative;
+}
+
+.grocery-item-circle {
+    position: absolute;
+    height: 1.8rem;
+    width: 1.8rem;
+    /* border: 1px solid var(--secondary-light-2); */
+    background-color: var(--primary-light-2);
+    border-radius: 50%;
+    left: -.9rem;
+}
+
+.grocery-item:hover {
+    background-color: var(--bg-light-1);
+}
+
+.grocery-item-icon {
+    margin-left: 1rem;
+    cursor: pointer;
+    color: var(--secondary-light-2);
+}
+
+.grocery-item-icon:hover {
+    color: var(--secondary);
+}
+
+.alert {
+    padding: .6rem 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: .8rem;
+    color: var(--primary-dark);
+}
+
+.alert-message-add {
+    background-color: var(--alert-1);
+}
+
+.alert-message-edit {
+    background-color: var(--alert-2);
+}
+
+.alert-message-remove {
+    background-color: var(--alert-3);
+}
